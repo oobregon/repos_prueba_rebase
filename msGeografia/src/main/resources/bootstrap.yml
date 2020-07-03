@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: ms-geografia
+  cloud:
+    config:
+      uri: http://192.168.137.42:8888 # Esta es la ip del servidor de configuracion
