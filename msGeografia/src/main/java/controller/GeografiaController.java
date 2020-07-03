@@ -24,8 +24,7 @@ public class GeografiaController {
 	ServicioLocalidades sLoc;
 	
 	@GetMapping (value = "/provincias",produces = MediaType.APPLICATION_JSON_VALUE)
-	public List<DtoProvincia> obtenerProvincia() {
-		System.out.println("Cambio 1");
+	public List<DtoProvincia> obtenerProvincia() {		
 		return sProv.obtenerProvincias();
 	}
 	

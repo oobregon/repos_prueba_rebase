@@ -29,7 +29,6 @@ public class ServicioProvinciasImpl implements ServicioProvincias {
 	public List<DtoProvincia> obtenerProvincias() {
 		List<DtoProvincia> provincias = new ArrayList<DtoProvincia>();
 		for(Provincia p: daoProv.findAll()) {
-			System.out.println("Cambio 2");
 			DtoProvincia provincia = new DtoProvincia();
 			provincia.setIdProvincia(p.getIdProvincia());
 			provincia.setNombreProvincia(p.getNombreProvincia());
