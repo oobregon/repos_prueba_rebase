@@ -36,7 +36,6 @@ public class ServicioLocalidadesImpl implements ServicioLocalidades {
 
 	@Override
 	public DtoLocalidad obtenerLocalidad(int idLocalidad) {
-		System.out.println("Cambio 3");
 		Localidad l = daoLoc.findById(idLocalidad).get();
 		DtoLocalidad localidad = new DtoLocalidad();
 		localidad.setCmun(new Integer(l.getIdLocalidad()).toString());
